@@ -57,6 +57,6 @@ DEPENDENCIES
   activerecord
   faker
   rspec
-  sinatra (= 1.4.4)
+  sinatra (~> 1.4.4)
   slim
   sqlite3

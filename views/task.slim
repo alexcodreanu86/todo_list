@@ -1,6 +1,7 @@
-- @compl = task.complete == 0 ? "__" : "✓"
-   
+
+
 li.task id = task.id
+  - @compl = task.complete == 0 ? "__" : "✓"
   ="[#{@compl}] #{task.content}"
   form.update action="/task/#{task.id}" method = "POST"
     input type = "hidden" name="_method" value ="PUT"

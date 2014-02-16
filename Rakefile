@@ -32,3 +32,13 @@ desc 'Start IRB with application environment loaded'
 task "console" do
   exec "irb -r./config/application"
 end
+
+desc 'Launch the app with shotgun'
+task "shotgun_mode" do
+  exec "shotgun main.rb"
+end
+
+desc 'Launch the app with ruby'
+task "ruby_mode" do
+  exec "ruby main.rb"
+end 

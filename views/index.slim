@@ -5,7 +5,7 @@ form action="/" method="POST"
 
 h2 My Tasks:
 
-ol.tasks
+ul.tasks
   - @tasks.each do |task|
    == slim :task, locals: {task: task}
     
