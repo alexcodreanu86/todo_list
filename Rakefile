@@ -1,6 +1,7 @@
 require 'active_record'
 require 'yaml'
 require 'logger'
+require 'rspec/core/rake_task'
 require_relative 'config/application'
 
 desc "Migrate the database through scripts in db/migrate. Target specific version with VERSION=x"
