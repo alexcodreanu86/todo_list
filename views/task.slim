@@ -1,0 +1,12 @@
+- @compl = task.complete == 0 ? "__" : "✓"
+   
+li.task id = task.id
+  ="#{@compl} #{task.content}"
+  form.update action="/task/#{task.id}" method = "POST"
+    input type = "hidden" name="_method" value ="PUT"
+    input style = "display: inline-block;float: left;" type="submit" value = "Toggle Complete" title="Complete Task"
+  form.delete action = "/task/#{task.id}" method= "POST"
+    input type="hidden" name ="_method" value ="DELETE"
+    input style = "display: inline-block;float: left;" type = "submit" value ="Delete Task" title="Delete Task"
+    br
+    br

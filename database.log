@@ -1,0 +1,26 @@
+D, [2014-02-16T08:38:31.668775 #5095] DEBUG -- :   [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2014-02-16T08:38:31.670934 #5095] DEBUG -- :   [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2014-02-16T08:38:31.671792 #5095] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-02-16T08:38:31.671891 #5095]  INFO -- : Migrating to CreateUsers (20140215225300)
+D, [2014-02-16T08:39:54.994595 #5115] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-02-16T08:39:54.994672 #5115]  INFO -- : Migrating to CreateTasks (20140215225300)
+D, [2014-02-16T08:39:54.995033 #5115] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-02-16T08:39:55.035944 #5115] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255) NOT NULL, "complete" integer DEFAULT 0) [0m
+D, [2014-02-16T08:39:55.040828 #5115] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140215225300"]]
+D, [2014-02-16T08:39:55.042876 #5115] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+D, [2014-02-16T08:44:38.575073 #5239] DEBUG -- :   [1m[36m (5.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2014-02-16T08:44:38.577309 #5239] DEBUG -- :   [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2014-02-16T08:44:38.578244 #5239] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-02-16T08:44:38.578354 #5239]  INFO -- : Migrating to CreateTasks (20140215225300)
+D, [2014-02-16T08:44:38.579046 #5239] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-02-16T08:44:38.582323 #5239] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255) NOT NULL, "complete" integer DEFAULT 0) [0m
+D, [2014-02-16T08:44:38.586858 #5239] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140215225300"]]
+D, [2014-02-16T08:44:38.588391 #5239] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+D, [2014-02-16T08:49:52.344342 #5271] DEBUG -- :   [1m[36m (6.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2014-02-16T08:49:52.346530 #5271] DEBUG -- :   [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2014-02-16T08:49:52.347404 #5271] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-02-16T08:49:52.347506 #5271]  INFO -- : Migrating to CreateTasks (20140215225300)
+D, [2014-02-16T08:49:52.348138 #5271] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-02-16T08:49:52.352158 #5271] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar(255) NOT NULL, "complete" integer DEFAULT 0) [0m
+D, [2014-02-16T08:49:52.356844 #5271] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140215225300"]]
+D, [2014-02-16T08:49:52.358805 #5271] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
